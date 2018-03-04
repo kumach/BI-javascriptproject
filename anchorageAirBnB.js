@@ -7168,7 +7168,8 @@ x: price,
 };
 
 var data1 = [ trace1 ];
-var layout = {};
+var layout = {title: "Scatter plot over price ad review"};
+
 
 Plotly.newPlot('myDiv1', data1, layout);
 
