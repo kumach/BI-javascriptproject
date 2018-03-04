@@ -7260,7 +7260,7 @@ Hur får vi till koden så vi får rätt antal rum av rätt typ
 på rätt plats i roomTypesCount? Tips: Det finns bara tre typer av rum
 */
 
-var countzero = 0:
+var countzero = 0;
 var countone = 0;
 var counttwo = 0;
 
