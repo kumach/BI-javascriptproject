@@ -7152,6 +7152,10 @@ var dataBig = [
    "last_modified": "2016-05-13 00:25:25.368373"
  },
 ];
+
+//@Kunthika Macharoensak 20180204
+//Inlämningsuppgift 2: JavaScript BI plug-in
+
 //En spridningsplott som visar pris på x-axeln och antal recensioner på y-axeln.
 var price = [];
 var reviews = [];
@@ -7168,7 +7172,12 @@ x: price,
 };
 
 var data1 = [ trace1 ];
-var layout = {title: "Scatter plot over price ad review"};
+var layout = {
+
+  title: "Scatter plot of the AirBnB price and reviews",
+  xaxis: {title: "Price"},
+  yaxis: {title: "Reviews"}
+};
 
 
 Plotly.newPlot('myDiv1', data1, layout);
@@ -7190,8 +7199,8 @@ var data2 = [trace2];
 var layout = {
 
   barmode: "stack",
-  title: "Histogram Price",
-  xaxis: {title: "Price Value"},
+  title: "Histogram of AirBnB rent price",
+  xaxis: {title: "Price"},
   yaxis: {title: "Count"}
 };
 Plotly.newPlot('myDiv2', data2, layout);
@@ -7223,8 +7232,8 @@ opacity: 0.75,
 var data3 = [trace3];
 var layout = {
   barmode: "histogram",
-  title: "Histogram Accomodates",
-  xaxis: {title: "Accomodates Value"},
+  title: "Histogram of AirBnB number of guests (accomodates)",
+  xaxis: {title: "Guests"},
   yaxis: {title: "Count"}
 };
 Plotly.newPlot('myDiv3', data3, layout);
@@ -7294,9 +7303,9 @@ var data4 = [{
 }];
 
 var layout = {
-  title: 'Room type (%)',
+  title: 'Pie diagram of AirBnB room types (%)',
+
   height: 400,
-  width: 500
-};
+  width: 500};
 
 Plotly.newPlot('myDiv4', data4, layout);
